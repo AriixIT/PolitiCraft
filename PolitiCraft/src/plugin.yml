@@ -1,0 +1,6 @@
+name: PolitiCraft
+main: ch.haidar.politicraft.Plugin
+version: 1.0
+description: A politics plugin
+
+commands:

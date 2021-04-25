@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PolitiCraft:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PolitiCraft_jar</output-path>
+    <root id="archive" name="PolitiCraft.jar">
+      <element id="module-output" name="PolitiCraft" />
+      <element id="extracted-dir" path="$USER_HOME$/IdeaProjects/Libraries/spigot-1.15.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
