@@ -9,21 +9,29 @@ public class ShowPP implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] args) {
-        if (!PoliticalPower.getPlayers().containsKey(commandSender.getName())) {
-            commandSender.sendMessage("§cAn error has occurred with the plugin. Please notify your server's admin.");
-            throw new PlayerNotFoundException(commandSender.getName());
+
+        String playerName;
+        if (args.length > 0) {
+            playerName = args[0];
+        } else {
+            playerName = commandSender.getName();
         }
 
-        commandSender.sendMessage(commandSender.getName() +
-                "'s Political Power: §a" +
-                PoliticalPower.getPlayers().get(commandSender.getName()) +
-                " pp");
+        if (!PoliticalPower.getPlayers().containsKey(playerName) || !PoliticalPower.getPlayers().get(playerName).getCountry().equals(PoliticalPower.getPlayers().get(commandSender.getName()).getCountry())) {
+            commandSender.sendMessage("§cAn This player doesn't exist in this country");
+            throw new PlayerNotFoundException(playerName);
+        }
 
-        // Display warning if player provided arguments
-        if (args.length > 0) {
-            commandSender.sendMessage("§6/Political Power doesn't require any arguments.");
+        if (args.length > 1) {
+            commandSender.sendMessage("§6/Political Power doesn't require that many arguments.");
             return false;
         }
+
+        commandSender.sendMessage(playerName +
+                "'s Political Power: §a" +
+                PoliticalPower.getPlayers().get(playerName).getPoliticalPower() +
+                " pp");
+
         return true;
     }
 }
