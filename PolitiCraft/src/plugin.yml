@@ -7,6 +7,9 @@ commands:
   showPP:
     usage:  'Usage: /showPP'
     description: Shows the political power of user
-  PPList:
+  ppList:
     usage:  'Usage: /ppList'
     description: Shows citizens with the most pp
+  createCountry:
+    usage:  'Usage: /createCountry [countryName]'
+    description: creates country lol

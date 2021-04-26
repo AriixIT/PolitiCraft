@@ -1,5 +1,6 @@
 package ch.haidar.politicraft;
 
+import ch.haidar.politicraft.commands.CreateCountry;
 import ch.haidar.politicraft.commands.PPList;
 import ch.haidar.politicraft.commands.ShowPP;
 import org.bukkit.Bukkit;
@@ -12,6 +13,7 @@ public class Plugin extends JavaPlugin {
         Bukkit.getServer().getLogger().info(ChatColor.GREEN + "PolitiCraft plugin is enabled!");
         this.getCommand("showPP").setExecutor(new ShowPP());
         this.getCommand("PPList").setExecutor(new PPList());
+        this.getCommand("createCountry").setExecutor(new CreateCountry());
         registerEvents();
         PoliticalPower.initialize();
     }
