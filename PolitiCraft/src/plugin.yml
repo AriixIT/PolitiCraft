@@ -4,3 +4,6 @@ version: 1.0
 description: A politics plugin
 
 commands:
+  showPP:
+    usage:  'Usage: /showPP'
+    description: Shows the political power of user
