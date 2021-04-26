@@ -8,13 +8,10 @@ public class Country {
 
     private String name;
 
-    private String creator;
-
     private HashMap<String, Player> citizens;
 
     public Country(String name, String creator) {
         this.name = name;
-        this.creator = creator;
         this.citizens = new HashMap<>();
         this.citizens.put(creator, PoliticalPower.getPlayers().get(creator));
     }
@@ -25,14 +22,6 @@ public class Country {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCreator() {
-        return creator;
-    }
-
-    public void setCreator(String creator) {
-        this.creator = creator;
     }
 
     public HashMap<String, Player> getCitizens() {

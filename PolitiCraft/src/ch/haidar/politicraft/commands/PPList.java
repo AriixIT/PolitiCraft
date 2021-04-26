@@ -17,7 +17,7 @@ public class PPList implements CommandExecutor {
         HashMap<String, Player> countryPlayers = new HashMap<>();
 
         for (Object player : PoliticalPower.getPlayers().values()) {
-            if(((Player) player).getCountry().equals(PoliticalPower.getPlayers().get(commandSender.getName()).getCountry())) {
+            if(PoliticalPower.getCountries().containsKey(((Player) player).getCountry()) && PoliticalPower.getCountries().get(((Player) player).getCountry()).equals(PoliticalPower.getPlayers().get(commandSender.getName()).getCountry())) {
                 countryPlayers.put(((Player) player).getName(), (Player) player);
             }
         }

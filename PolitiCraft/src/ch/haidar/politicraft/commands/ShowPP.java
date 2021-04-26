@@ -17,11 +17,6 @@ public class ShowPP implements CommandExecutor {
             playerName = commandSender.getName();
         }
 
-        if (!PoliticalPower.getPlayers().containsKey(playerName) || !PoliticalPower.getPlayers().get(playerName).getCountry().equals(PoliticalPower.getPlayers().get(commandSender.getName()).getCountry())) {
-            commandSender.sendMessage("§cAn This player doesn't exist in this country");
-            throw new PlayerNotFoundException(playerName);
-        }
-
         if (args.length > 1) {
             commandSender.sendMessage("§6/Political Power doesn't require that many arguments.");
             return false;

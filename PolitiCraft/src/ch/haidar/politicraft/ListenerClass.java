@@ -16,14 +16,9 @@ public class ListenerClass implements Listener {
 
     @EventHandler
     public void onEntityDeathEvent(EntityDeathEvent event) {
-        if (event.getEntity().getKiller() instanceof org.bukkit.entity.Player) {
+        if (event.getEntity().getKiller() instanceof org.bukkit.entity.Player && event.getEntity() instanceof org.bukkit.entity.Player) {
             Player player = PoliticalPower.getPlayers().get(event.getEntity().getKiller().getName());
-            if (event.getEntity() instanceof Monster) {
-                player.setPoliticalPower(player.getPoliticalPower() + 1);
-            }
-            else if (event.getEntity() instanceof org.bukkit.entity.Player) {
-                player.setPoliticalPower(player.getPoliticalPower() + (PoliticalPower.getPlayers().get(event.getEntity().getName()).getPoliticalPower() - 100));
-            }
+            player.setPoliticalPower(player.getPoliticalPower() + (PoliticalPower.getPlayers().get(event.getEntity().getName()).getPoliticalPower() - 100));
         }
 
     }
