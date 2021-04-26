@@ -31,7 +31,7 @@ public class PPList implements CommandExecutor {
             if (index >= 5) {
                 break;
             }
-            message += "" + index + ". " + entry.getValue().getName() + " - " + entry.getValue().getPoliticalPower() + " pp \n";
+            message += "" + index + ". " + entry.getValue().getName() + " - " + entry.getValue().getPoliticalPower() + " Ⴔ \n";
             index++;
         }
 

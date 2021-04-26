@@ -30,7 +30,7 @@ public class ShowPP implements CommandExecutor {
         commandSender.sendMessage(playerName +
                 "'s Political Power: §a" +
                 PoliticalPower.getPlayers().get(playerName).getPoliticalPower() +
-                " pp");
+                " Ⴔ");
 
         return true;
     }
