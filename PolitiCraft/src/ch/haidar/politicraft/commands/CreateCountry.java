@@ -29,7 +29,7 @@ public class CreateCountry implements CommandExecutor {
 
         for (int i = 0; i < args.length; i++) {
             if (i >= 1) {
-                if (PoliticalPower.getPlayers().containsKey(args[i])) {
+                if (PoliticalPower.getPlayers().containsKey(args[i]) && !citizens.contains(PoliticalPower.getPlayers().get(args[i]))) {
                     citizens.add(PoliticalPower.getPlayers().get(args[i]));
                 } else {
                     commandSender.sendMessage(args[i] + " is not a valid player");
@@ -45,10 +45,11 @@ public class CreateCountry implements CommandExecutor {
         }
 
         if (ppOfCitizens >= 300) {
+            commandSender.sendMessage(countryName + " is now an official country!");
             PoliticalPower.getCountries().put(countryName, new Country(countryName, citizens));
+            Bukkit.getPlayer(commandSender.getName()).setDisplayName("[" + args[0] + "] " + commandSender.getName());
+            Bukkit.getPlayer(commandSender.getName()).setPlayerListName("[" + args[0] + "] " + commandSender.getName());
         }
-        Bukkit.getPlayer(commandSender.getName()).setDisplayName("[" + args[0] + "] " + commandSender.getName());
-        Bukkit.getPlayer(commandSender.getName()).setPlayerListName("[" + args[0] + "] " + commandSender.getName());
 
         return true;
     }

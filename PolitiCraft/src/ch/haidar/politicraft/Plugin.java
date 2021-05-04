@@ -1,5 +1,6 @@
 package ch.haidar.politicraft;
 
+import ch.haidar.politicraft.commands.ChangePP;
 import ch.haidar.politicraft.commands.CreateCountry;
 import ch.haidar.politicraft.commands.PPList;
 import ch.haidar.politicraft.commands.ShowPP;
@@ -14,6 +15,7 @@ public class Plugin extends JavaPlugin {
         this.getCommand("showPP").setExecutor(new ShowPP());
         this.getCommand("PPList").setExecutor(new PPList());
         this.getCommand("createCountry").setExecutor(new CreateCountry());
+        this.getCommand("ChangePP").setExecutor(new ChangePP());
         registerEvents();
         PoliticalPower.initialize();
     }

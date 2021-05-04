@@ -11,5 +11,8 @@ commands:
     usage:  'Usage: /ppList'
     description: Shows citizens with the most pp
   createCountry:
-    usage:  'Usage: /createCountry [countryName]'
+    usage:  'Usage: /createCountry [countryName] [playerName]'
     description: creates country lol
+  changePP:
+    usage:  'Usage: /changePP [amount] [playerName]'
+    description: changes pp of player if you want lol
