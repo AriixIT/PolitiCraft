@@ -26,9 +26,4 @@ public class PoliticalPower {
         players.put(playerName, new Player(playerName, 100, ""));
     }
 
-    public static void addCountry (String countryName, String playerName) {
-        if (countries.containsKey(countryName)) return;
-        countries.put(countryName, new Country(countryName, playerName));
-    }
-
 }
