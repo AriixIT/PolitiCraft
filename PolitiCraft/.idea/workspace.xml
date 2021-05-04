@@ -8,16 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9baa8003-4e29-4e94-b67d-4e9e237e6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PolitiCraft_jar/PolitiCraft.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PolitiCraft_jar/PolitiCraft.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/ListenerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/ListenerClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/commands/PPList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/commands/PPList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/commands/ShowPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/commands/ShowPP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/objects/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PolitiCraft/ch/haidar/politicraft/objects/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/haidar/politicraft/ListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/haidar/politicraft/ListenerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/PPList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/PPList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/ShowPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/ShowPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +20,34 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1007">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,13 +74,13 @@
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/exceptions/PlayerNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Player.java" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/PoliticalPower.java" />
-        <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/Plugin.java" />
         <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/ListenerClass.java" />
-        <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/ShowPP.java" />
         <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/PPList.java" />
+        <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java" />
+        <option value="$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java" />
       </list>
     </option>
   </component>
@@ -74,6 +97,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,8 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -131,7 +154,19 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,16 +180,19 @@
       <workItem from="1619392547321" duration="7420000" />
       <workItem from="1619432942279" duration="10379000" />
       <workItem from="1619463046833" duration="2294000" />
+      <workItem from="1619968408091" duration="2539000" />
+      <workItem from="1620133563570" duration="49000" />
+      <workItem from="1620144705695" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17799000" />
+    <option name="totallyTimeSpent" value="20634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -187,7 +225,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/exceptions/PlayerNotFoundException.java">
@@ -243,30 +281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -316,6 +334,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/commands/CreateCountry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/haidar/politicraft/objects/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,7 +1,6 @@
 package ch.haidar.politicraft.objects;
 
-import ch.haidar.politicraft.PoliticalPower;
-
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Country {
@@ -10,10 +9,13 @@ public class Country {
 
     private HashMap<String, Player> citizens;
 
-    public Country(String name, String creator) {
+    public Country(String name, ArrayList<Player> citizens) {
         this.name = name;
         this.citizens = new HashMap<>();
-        this.citizens.put(creator, PoliticalPower.getPlayers().get(creator));
+
+        for (Player citizen : citizens) {
+            this.citizens.put(citizen.getName(), citizen);
+        }
     }
 
     public String getName() {
